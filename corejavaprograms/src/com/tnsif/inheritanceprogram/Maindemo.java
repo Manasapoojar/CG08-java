@@ -17,6 +17,6 @@ public class Maindemo {
 	        a.eat();
 	        d.eat();   // inherited method
 	        d.bark();  // own method
-	    }
+	   }
 	}
 

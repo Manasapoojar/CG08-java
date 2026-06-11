@@ -6,7 +6,7 @@ class Father{
 	
 	//data member of parent class
 	int money=90000;
-	String car="bmw";
+	String car="bmw"; 
 	
 	//method of parent class
 	void drinking() {
