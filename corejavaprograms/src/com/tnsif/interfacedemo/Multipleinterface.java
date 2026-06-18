@@ -9,7 +9,7 @@ interface Camera{
 interface Musicplayer{
 	void playmusic();
 }
-//A class implementing multiple interafce
+//A class implementing multiple interface
 
 class Smartphone implements Camera,Musicplayer{
 
