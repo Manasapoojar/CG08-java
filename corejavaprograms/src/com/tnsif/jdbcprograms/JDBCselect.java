@@ -14,12 +14,12 @@ public class JDBCselect {
     // step 2 : load and register the driver
      
      Class.forName("org.postgresql.Driver");
-     System.out.println("step 2 load and driver done");
+     System.out.println("1. step 2 load and driver done");
      
      //step 3: establish connection
      
      Connection conn=DriverManager.getConnection("jdbc:postgresql://localhost:5432/Peenya","postgres" ,"Manasa@09");
-     System.out.println("connection completed");
+     System.out.println("2. connection completed");
      
      //step 4: create statement
      
@@ -29,13 +29,13 @@ public class JDBCselect {
      
      String strselect="select sid,sname,sbranch from library ";
      
-     System.out.println("the sql statement is "+strselect);
+     System.out.println("3. the sql statement is "+strselect);
      
      // process the result to display
      
      ResultSet rst=st.executeQuery(strselect);
      
-     System.out.println("The records are :");
+     System.out.println("4. The records are :\n");
      int rowcount=0;
      while(rst.next()) {
         int sid=rst.getInt("sid");
